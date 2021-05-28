@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sales_contract_form" model="ir.ui.view">
+        <field name="name">Contract</field>
+        <field name="model">crm.lead</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="crm.crm_case_form_view_leads"/>
+        <field name="arch" type="xml">
+            <field name="referred" position="after">
+                <group name="contract" string="Contract info">
+                    <field name="is_contract"/>
+                    <field name="contract_date"/>
+                    <field name="contract_details"/>
+                    <field name="planned_income"/>
+                </group>
+            </field>
+        </field>
+    </record>
+</odoo>
