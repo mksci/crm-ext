@@ -6,7 +6,10 @@
         Module extending basic sales form view""",
 
     'description': """
-        Module extending sales form
+        Sales > Leads
+        
+        - On Extra-Info tab adds Contract Info section
+        - Create Install tab with assembly details
     """,
 
     'author': "mksci",
@@ -24,7 +27,7 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/widoczek.xml'
+        'views/widoczek.xml',
     ],
 
 }
